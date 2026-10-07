@@ -5,6 +5,7 @@ import numpy as np
 model = joblib.load("model.pkl")
 app = Flask(__name__)
 @app.route("/predict", methods=["POST"])
+@app.route('/predict-batch', methods=['POST'])
 def predict():
  data = request.json["features"]
  prediction = model.predict([np.array(data)])
