@@ -75,4 +75,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}/ml-flask-app:latest
+          tags: ghcr.io/beatrizmourato/aail-tutorials/ml-flask-app:latest
